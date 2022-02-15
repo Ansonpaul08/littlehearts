@@ -1,0 +1,78 @@
+.log
+{
+width: 10cm;
+height: 8cm;
+position: absolute;
+top: 28vh;
+right:1in;
+background-color: rgb(160, 221, 138);
+border-radius: 100px 10px 100px 20px;
+color:tomato;
+border-style:double;
+}
+h1
+{
+font-family:sans-serif;
+text-align: center;    
+color:rgb(141, 71, 10);
+font-size: 26px;
+}
+h2
+{
+position: absolute;
+top: 2.4in;
+left: 2.5in;
+}
+#uname
+{
+position: absolute;
+right: 240px;
+top: 10vh;
+font-family: Arial, Helvetica, sans-serif;    
+}
+#us
+{
+height: 0.6cm;
+position: absolute;
+right: 140px;
+top: 14vh;   
+border-radius: 100px 10px 100px 20px;
+box-sizing: content-box;
+border-style: none;
+}
+#pass
+{
+position: absolute;
+right: 240px;
+top: 19vh; 
+font-family: Arial, Helvetica, sans-serif;    
+}
+#pa
+{
+height: 0.6cm;
+position: absolute;
+right: 140px;
+top: 22vh;   
+border-radius: 100px 10px 100px 20px;
+box-sizing: content-box; 
+border-style: none;   
+}
+.but
+{
+position: absolute;
+right: 200px;
+top: 30vh; 
+width:4cm;  
+height: 1cm;
+border-radius: 100px 10px 100px 20px;
+background-color: violet;
+color: rgb(15, 13, 13);
+font-family:sans-serif;
+font-size: 20px;
+}
+.but:hover
+{
+background-color: lightgoldenrodyellow;
+transform: translate(0px,2px);
+color: #2ecc71;
+}
