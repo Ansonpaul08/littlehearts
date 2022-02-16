@@ -10,35 +10,30 @@ export class LoginComponent implements OnInit {
   pass="Enter Password";
   uname="";
   admin:any={
-    anson:{username:"anson",password:"anson1"}
+    anson:{username:"anson",password:"anson1"},
+    gopi:{username:"gopi",password:"gopi1"},
+    amal:{username:"amal",password:"amal1"}
+
   }
   constructor() { }
-
+  
   ngOnInit(): void {
   }
-  unamechange(event:any){
-    this.uname=event.target.value;
-    console.log(this.uname);
+  
+  login(u:any,p:any){
+   var uname=u.value;
+   var pass=p.value;
+   let user=this.admin;
+   if(uname in user){
+     if(pass==user[uname]["password"]){
+       alert("Login Successful");
+     }
+     else{
+      alert("Invalid Password");
+     }
   }
-  passchange(event:any){
-    this.pass=event.target.value;
-    console.log(this.pass);
+  else{
+    alert("Invalid User");
   }
-  login()
-  {
-    var uname=this.uname;
-    var pass=this.pass;
-    let user=this.admin;
-    if(uname in user){
-      if(pass==user[uname]["password"]){
-        alert("Login Successful")
-      }
-      else{
-        alert("Invalid Password");
-      }
-    }
-    else{
-      alert("Invaild User");
-    }
-  }
+ }
 }
