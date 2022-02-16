@@ -1,0 +1,16 @@
+.main
+{
+width: 70%;
+height:80vh;
+background-color: whitesmoke;
+position:absolute;
+right:5cm;
+border-radius: 10% 10% 10% 10%;
+border-color: blue;
+border-style:solid;
+}
+h1
+{
+text-align: center;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
