@@ -7,8 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LoginComponent implements OnInit {
   aim="Where Your Kids Shines"
-  pass="Enter Password";
   uname="";
+  pass="Enter Password";
+
   admin:any={
     anson:{username:"anson",password:"anson1"},
     gopi:{username:"gopi",password:"gopi1"},
@@ -20,9 +21,9 @@ export class LoginComponent implements OnInit {
   ngOnInit(): void {
   }
   
-  login(u:any,p:any){
-   var uname=u.value;
-   var pass=p.value;
+  login(){
+   var uname=this.uname;
+   var pass=this.pass;
    let user=this.admin;
    if(uname in user){
      if(pass==user[uname]["password"]){
