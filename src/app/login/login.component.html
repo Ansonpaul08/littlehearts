@@ -1,9 +1,11 @@
 <h2>"{{aim}}"</h2> 
 <div class="log">
+   <form (ngSubmit)="login()">
   <h1> ADMIN LOGIN</h1>
   <label for=""id="uname"><strong>USERNAME</strong></label>
-  <input type="text"id="us" placeholder="username"[(ngModel)]="uname">
-  <label for=""id="pass"><strong>PASSWORD</strong> </label>
-  <input type="password"id="pa"[value]="pass"[(ngModel)]="pass">
-  <button class="but"(click)="login()">LOGIN</button>
+  <input type="text"id="us" placeholder="username"name=uname [(ngModel)]="uname">
+  <label for=""id="pass"><strong>PASSWORD</strong></label>
+  <input type="password"id="pa"[value]="pass"name=pass [(ngModel)]="pass">
+  <button type="submit"class="but">LOGIN</button>
+</form>
 </div>
